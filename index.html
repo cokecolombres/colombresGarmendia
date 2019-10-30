@@ -38,11 +38,12 @@
         <!--Template Color-->
         <link href="css/colors/default.css" rel="stylesheet">
 
+        <!-- ICONS -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
-    <body>
-        
 
-
+    <body class="text-justify">
         
         <header id="topnav" class="defaultscroll fixed-top sticky">
             <div class="top-bar d-none d-md-block">
@@ -129,6 +130,19 @@
                 color: #006699;
             }
 
+            .cg-title{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .cg-link{
+                    color: #615fe6;
+                    transition: all 0.2s;
+                    font-size: 15px;
+                    font-weight: 400;
+            }
+
         </style>
 
         <section id="home">
@@ -174,27 +188,6 @@
             </div>
         </section>
 
-
-        <!-- <section class="bg-home" id="home">
-            <div class="bg-overlay"></div>
-            <div class="home-center">
-                <div class="home-desc-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10 text-center">
-                                <h4 class="home-title text-white">Colombres Garmendia & Asociados</h4>
-                                <p>
-                                    <br><br><br><br>
-                                    <br><br><br><br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-
         <!--About section-->
         <section id="estudio" class="section">
             <div class="container">
@@ -203,11 +196,10 @@
                 <p class="pt-2">En el año 1965 el Dr. Ignacio Colombres Garmendia fundó el Estudio Jurídico que lleva su nombre. Desde ese entonces, el estudio mantuvo un constante crecimiento basado en tres pilares fundamentales: Lealtad hacia sus clientes, Idoneidad de sus profesionales y Confidencialidad en los asuntos encomendados.</p>
                 <p>El estudio <b>Ignacio Colombres Garmendia & Asociados</b> se encuentra integrado por un amplio staff de profesionales, lo que lo convierte en uno de los estudios jurídicos más grandes del norte del país. Con sede en la ciudad de San Miguel de Tucumán, provincia de Tucumán, su ámbito de actuación se extiende a todo el Noroeste Argentino, contando con una red activa de corresponsalías en las provincias de Catamarca, Santiago del Estero, Salta y Jujuy. Asimismo, el estudio actúa como corresponsalía, en el noroeste argentino, de los principales estudios jurídicos del país.</p>
                 <p>Entre sus numerosos clientes, se encuentran reconocidas empresas nacionales y extranjeras, bancos, entidades financieras, ONG, PyMEs y personas físicas.</p>
-                <br>
-                <div class="row">
-                    
+                <hr>
+                <div class="row pt-4">
                     <div class="col-lg-9">
-                        <h3>Areas de práctica</h3>
+                        <h3 class="cg-title ">Principales áreas de actuación</h3>
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul class="text-muted mt-3">
@@ -233,13 +225,14 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-3">
-                        <h3>Mas informacion</h3>
+                        <h3 class="cg-title ">Mas información</h3>
                         <br>
                         <p>
-                            <a href="acerca-del-estudio.html">Acerca del estudio</a>
+                            <a class="cg-link" href="acerca-del-estudio.html"><i class="fa fa-arrow-right"></i> Acerca del estudio</a>
                             <hr>
-                            <a href="estructura-asset-recovery.html">Estructura de asset recovery del estudio</a>
+                            <a class="cg-link" href="estructura-asset-recovery.html"><i class="fa fa-arrow-right"></i> Estructura de asset recovery del estudio</a>
 
                         </p>
                     </div>
