@@ -38,18 +38,68 @@
         <!--Template Color-->
         <link href="css/colors/default.css" rel="stylesheet">
 
+        <!-- ICONS -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
+        
+         <style type="text/css">
+            .carousel-item {
+              height: 100vh;
+              min-height: 350px;
+              background: no-repeat center center scroll;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+
+            .carousel-caption {
+                padding-bottom: 300px;
+            }
+
+            .carousel-caption h1 {
+                color: white;
+                font-weight: bold;
+            }
+
+            .carousel-caption p {
+                font-size: 20px;
+                font-weight: bold;
+                color: #006699;
+            }
+
+            .cg-title{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .cg-title-light{
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+
+            .cg-link{
+                    color: #615fe6;
+                    transition: all 0.2s;
+                    font-size: 15px;
+                    font-weight: 400;
+            }
+
+        </style>
         
         <header id="topnav" class="defaultscroll fixed-top sticky">
             <div class="top-bar d-none d-md-block">
                 <div class="container">
-                    <div class="mr-3">
+                    <div class="mr-3 pt-3">
                         <div class="text-right">
                             <div class="f-right">
-                                <span class="p-3">LinkedIN</span>
-                                <span class="p-3">Whatsapp</span>
-                                <span class="p-3">+54 (381) 4228462</span>
+                                <a href="https://www.linkedin.com/company/colombres-garmendia-asoc/" target="_blank">
+                                    linkedin <i class="fa fa-linkedin-square" style=""></i>
+                                </a>
+                                <span class="pt-1 p-2"><a class="text-dark" href="">+54 (381) 4310765</a></span>
                             </div>
                         </div>
                     </div>
@@ -59,8 +109,8 @@
                 <!-- Logo container-->
                 <div>
                     <a href="index.html" class="logo text-uppercase">
-                        <img src="images/logo2.png" alt="" class="logo-light" height="64" />
-                        <img src="images/logo2.png" alt="" class="logo-dark" height="64" />
+                        <img src="images/logo2.png" alt="" class="logo-light pb-4" height="128" />
+                        <img src="images/logo2.png" alt="" class="logo-dark pb-4" height="84" />
                     </a>
                 </div>
                 <!-- End Logo container-->
@@ -81,44 +131,45 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu">
                         <li class="">
-                            <a href="index.html#estudio">Estudio</a>
+                            <a href="#estudio">Estudio</a>
                         </li>
                         <li class="">
-                            <a href="index.html#socios">Socios</a>
+                            <a href="#socios">Socios</a>
                         </li>
                         <li class="">
-                            <a href="index.html#asociados">Asociados</a>
+                            <a href="#asociados">Asociados</a>
                         </li>
                         <li class="">
-                            <a href="index.html#referencias">Referencias</a>
+                            <a href="#referencias">Referencias</a>
                         </li>
-                        <li class="">
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                        <!-- <li class="">
                             <a href="noticias.html">Noticias</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
-        </header> 
+        </header>   
 
 
 
         <!--About section-->
         <section id="service" class="section">
             <div class="container">
-                <br>
+                <br><br><br><br><br>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <a class="nav-link active" href="noticias.html">Atras</a>
+                          <a class="nav-link" onclick="window.history.back();" style="cursor: pointer;"> <i class="fa fa-arrow-left"></i> Volver atrás</a>
                         </div>
                     </div>
-                    <div class="col-lg-9" style="min-height: 600px;">
-                        <h6 class="team-name text-uppercase text-custom mb-1">ESTUDIO IGNACIO COLOMBRES GARMENDIA & ASOCIADOS</h6>
+                    <div class="col-lg-9 text-justify" style="min-height: 600px;">
+                        <h5 class="text-center cg-title"><b>ESTRUCTURA DE ASSET RECOVERY DEL ESTUDIO</b></h5>
                         <hr>
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                <h5 class="text-center"><b>ESTRUCTURA DE ASSET RECOVERY DEL ESTUDIO</b></h5>
-                                <br>
                                 <p class="text-center">
                                     <b>El Estudio maneja una importante cartera de Recupero de Activos Financieros, principalmente de Bancos de plaza. Dentro de dicha cartera existen diversos productos y montos que exigieron una división por área y especialidad de cada uno de los abogados abocados a dicha tarea.-</b>
                                 </p>
@@ -169,60 +220,68 @@
         </section>
 
 
-        <section class="section bg-light"> 
+        <section class="section bg-light" id="contacto"> 
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <p class="text-uppercase footer-title">Si tiene alguna consulta legal, no dude en contactarnos.</p>
+                        </div>              
+                        <div class="custom-form mt-4 pt-4">
+                            <div id="message"></div>
+                            <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="name">Nombre</label>
+                                            <input name="name" id="name" type="text" class="form-control" placeholder="Nombre.." >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input name="email" id="email" type="email" class="form-control" placeholder="Dirección de email..." >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="subject">Asunto</label>
+                                            <input type="text" class="form-control" id="subject" placeholder="Motivo por el que nos contacta.." />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="comments">Mensaje</label>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Mensaje..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-custom" value="Enviar mensaje">
+                                        <div id="simple-msg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  
+                    </div>
                     <div class="col-lg-3">
-                        <p class="text-uppercase footer-title">Help center</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">Accounting </a></li>
-                            <li><a href="#">Billing</a></li>
-                            <li><a href="#">General Question</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <p class="text-uppercase footer-title">about Linexon</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">About Us  </a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Job Opening</a></li>
-                            <li><a href="#">Term</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <p class="text-uppercase footer-title">ressources</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Academy </a></li>
-                            <li><a href="#">Video Tutorial</a></li>
-                            <li><a href="#">Monitoring Grader </a></li>
-                            <li><a href="#">Linexon API</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <p class="text-uppercase footer-title">more info</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">For Marketing</a></li>
-                            <li><a href="#">For CEOs </a></li>
-                            <li><a href="#">For Agencies</a></li>
-                            <li><a href="#">Our Apps</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <p class="text-uppercase footer-title">Contact Us</p>
+                        <p class="text-uppercase footer-title">Contacto</p>
                         <div class="contact-us">
-                            <p>Europe: +1 00 12 34 5</p>
-                            <p>US: +1 67 89 01 23 4</p>
-                            <p>support@Linexon.com</p>
+                            <p>PBX: +54 (381) 4310765</p>
+                            <p>Fax: +54 (381) 4228462</p>
+                            <p>estudio@colombres-garmendia.com</p>
+                        </div>
+                        <p class="text-uppercase footer-title">Ubicación</p>
+                        <div class="contact-us">
+                            <p>San Martín 666 - 6º Piso </p>
+                            <p>San Miguel de Tucumán / CP4000 </p>
+                            <p>República Argentina </p>
                         </div>
                         <ul class="footer-icons list-inline mt-4"> 
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-facebook"></i></a></li> 
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-twitter"></i></a></li> 
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-apple"></i></a></li>  
+                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-linkedin"></i></a></li> 
                         </ul>
 
                     </div>
@@ -232,7 +291,7 @@
 
         <!-- COPYRIGHT -->
         <div class="footer-alt bg-dark">
-            <p class="copy-rights">2017 © Linexon. All Rights Reserved</p>
+            <p class="copy-rights">2019 © <b>data</b>Lab. All Rights Reserved</p>
         </div>
                 
 

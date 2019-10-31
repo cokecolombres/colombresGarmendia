@@ -38,17 +38,79 @@
         <!--Template Color-->
         <link href="css/colors/default.css" rel="stylesheet">
 
+        <!-- ICONS -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
+
+        <style type="text/css">
+            .carousel-item {
+              height: 100vh;
+              min-height: 350px;
+              background: no-repeat center center scroll;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+
+            .carousel-caption {
+                padding-bottom: 300px;
+            }
+
+            .carousel-caption h1 {
+                color: white;
+                font-weight: bold;
+            }
+
+            .carousel-caption p {
+                font-size: 20px;
+                font-weight: bold;
+                color: #006699;
+            }
+
+            .cg-title{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .cg-title-light{
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+
+            .cg-link{
+                    color: #615fe6;
+                    transition: all 0.2s;
+                    font-size: 15px;
+                    font-weight: 400;
+            }
+
+        </style>
         
-        <!-- Navigation Bar-->
-        <header id="topnav" class="defaultscroll fixed-top sticky darkheader">
+       <header id="topnav" class="defaultscroll fixed-top sticky">
+            <div class="top-bar d-none d-md-block">
+                <div class="container">
+                    <div class="mr-3 pt-3">
+                        <div class="text-right">
+                            <div class="f-right">
+                                <a href="https://www.linkedin.com/company/colombres-garmendia-asoc/" target="_blank">
+                                    linkedin <i class="fa fa-linkedin-square" style=""></i>
+                                </a>
+                                <span class="pt-1 p-2"><a class="text-dark" href="">+54 (381) 4310765</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <!-- Logo container-->
                 <div>
                     <a href="index.html" class="logo text-uppercase">
-                        <img src="images/socios/logo.png" alt="" class="logo-light" height="64">
-                        <img src="images/socios/logo.png" alt="" class="logo-dark" height="64">
+                        <img src="images/logo2.png" alt="" class="logo-light pb-4" height="120" />
+                        <img src="images/logo2.png" alt="" class="logo-dark pb-4" height="120" />
                     </a>
                 </div>
                 <!-- End Logo container-->
@@ -69,23 +131,33 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu">
                         <li class="">
-                            <a href="index.html">Inicio</a>
+                            <a href="#estudio">Estudio</a>
                         </li>
-                        <li class="last-elements">
-                            <a href="#client">Publicaciones</a>
+                        <li class="">
+                            <a href="#socios">Socios</a>
                         </li>
-                        <li class="last-elements">
-                            <a href="#team">Contacto</a>
+                        <li class="">
+                            <a href="#asociados">Asociados</a>
                         </li>
+                        <li class="">
+                            <a href="#referencias">Referencias</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                        <!-- <li class="">
+                            <a href="noticias.html">Noticias</a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
-        </header>   
+        </header>     
 
 
 
         <!--About section-->
         <section id="service" class="section">
+            <br><br><br>
             <div class="container">
                 <br>
                 <div class="row">
@@ -94,45 +166,48 @@
                             <img src="images/socios/1.jpg" alt="" class=" mx-auto d-block rounded-circle" height="124" width="124">
                         </div>
                         <br>
+                        <h6 class="team-name text-uppercase text-custom text-center mb-1">COLOMBRES GARMENDIA, Ignacio</h6>
+                        <p class="team-work text-muted text-center">Socio FUNDADOR</p>
+                        <hr>
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                           <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Antecedentes universitarios</a>
                           <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Antecedentes institucionales</a>
                           <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Cargos docentes e institucionales a la fecha</a>
                           <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Otros antecedentes profesionales</a>
+                          <br>
+                          <a class="nav-link" onclick="window.history.back();" style="cursor: pointer;"> <i class="fa fa-arrow-left"></i> Volver atrás</a>
                         </div>
                     </div>
-                    <div class="col-lg-9 bg-light p-3" style="min-height: 600px;">
-                        <h6 class="team-name text-uppercase text-custom mb-1">COLOMBRES GARMENDIA, Ignacio</h6>
-                        <p class="team-work text-muted">Socio FUNDADOR</p>
-                        <hr>
+                    <div class="col-lg-9 bg-light p-3 text-justify" style="min-height: 600px; max-height: 600px; overflow-y: scroll;">
+                        
                         <div class="tab-content" id="v-pills-tabContent">
                           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            
-                            <h5 class="text-center"><b>Antecedentes universitarios</b></h5>
+                            <h5 class="text-center cg-title"><b>Antecedentes universitarios</b></h5>
+                            <hr>
                             <br>
                             <h6>TITULOS:</h6>
                             <ol>
-                                <li style="text-align:justify">Abogado: Egresado de la Facultad de Derecho y Cien­cias Sociales de la Universidad Nacional de Tucu­mán, con fecha 23 de Diciembre de 1964.-</li>
-                                <li style="text-align:justify">Doctor en Derecho y Ciencias Sociales: Título obte­nido con fecha 19 de Septiembre de 1977, en la Facultad de Dere­cho y Ciencias Sociales de la Universidad Nacional de Tucumán. La Tésis Doctoral fue laureada por el Tribu­nal integrado por los Dres. Jorge Joaquin Llambias, Alberto Molina­rio y Alberto Spota.-</li>
+                                <li>Abogado: Egresado de la Facultad de Derecho y Cien­cias Sociales de la Universidad Nacional de Tucu­mán, con fecha 23 de Diciembre de 1964.-</li>
+                                <li>Doctor en Derecho y Ciencias Sociales: Título obte­nido con fecha 19 de Septiembre de 1977, en la Facultad de Dere­cho y Ciencias Sociales de la Universidad Nacional de Tucumán. La Tésis Doctoral fue laureada por el Tribu­nal integrado por los Dres. Jorge Joaquin Llambias, Alberto Molina­rio y Alberto Spota.-</li>
                             </ol>
                             <h6>PREMIOS COMO EGRESADO:</h6>
                             <p>Al haber sido el egresado con mejor promedio de su pro­moción, ha recibido los siguientes premios:</p>
                             <ol>
-                                <li style="text-align:justify">Premio "Facultad" (Medalla de Oro)</li>
-                                <li style="text-align:justify">Premio "Alfredo Coviello" (Medalla de Oro)</li>
-                                <li style="text-align:justify">Premio "Editorial La Ley" (Colección de Juris­pruden­cia).-</li>
+                                <li>Premio "Facultad" (Medalla de Oro)</li>
+                                <li>Premio "Alfredo Coviello" (Medalla de Oro)</li>
+                                <li>Premio "Editorial La Ley" (Colección de Juris­pruden­cia).-</li>
                             </ol>
                             <h6>CARRERA DOCENTE UNIVERSITARIA:</h6>
                             <ol>
-                                <li style="text-align:justify">Ayudante estudiantil de Derecho Civil III - Contratos, cargo ganado por concurso y de­signado mediante Resolución de la Facultad de Derecho de la Univer­sidad Nacional de Tucumán, N° 13-4-966 – Cátedra Dr. Fernando J. López de Zavalía.-</li>
-                                <li style="text-align:justify">Secretario Docente del Instituto de Derecho Compa­rado de la Universidad Nacional de Tucumán. Cargo obtenido por concur­so y designado por Resolución N° 13-4-966.-</li>
-                                <li style="text-align:justify">Profesor Adscripto de Derecho Civil III, cargo obteni­do por concurso y designado por Resolución N°17-4-966.</li>
-                                <li style="text-align:justify">Profesor Adscripto de Derecho Civil II. Cargo obte­nido por concurso y designado por resolución N°157-13-978.-</li>
-                                <li style="text-align:justify">Profesor Adjunto de Derecho Civil II. Cargo ganado por concurso y designado por Resolución N° 101-19-973.-</li>
-                                <li style="text-align:justify">Profesor Asociado de Derecho Civil II en la Facul­tad de Ciencias Jurídicas y Sociales de la Univer­sidad Privada del Norte Santo Tomás de Aquino.-</li>
-                                <li style="text-align:justify">Profesor Titular de la Cátedra de Derecho Civil II – Facultad de Derecho de la U.N.T., (Obligaciones) cargo obtenido mediante concurso, ha­biendo sido de­sig­nado por Resolución N° 570-973. El Tribunal es­tuvo in­tegrado por los Dres. Jorge Joaquin Llambias, Werner Gold­schmidt y Cesar Augusto Abelen­da.</li>
-                                <li style="text-align:justify">Profesor de Post Grado (Coordinador Académico), Curso de Doctorado&nbsp;Derecho Civil, Facultad de Derecho de la U.N.T. Tema: “Obligaciones de dar sumas de dinero” Años 1993/4.-</li>
-                                <li style="text-align:justify">Director Regional del Curso “Programa de Derecho Empresario”, dependiente de la Fundación del Tucumán.-</li>
+                                <li>Ayudante estudiantil de Derecho Civil III - Contratos, cargo ganado por concurso y de­signado mediante Resolución de la Facultad de Derecho de la Univer­sidad Nacional de Tucumán, N° 13-4-966 – Cátedra Dr. Fernando J. López de Zavalía.-</li>
+                                <li>Secretario Docente del Instituto de Derecho Compa­rado de la Universidad Nacional de Tucumán. Cargo obtenido por concur­so y designado por Resolución N° 13-4-966.-</li>
+                                <li>Profesor Adscripto de Derecho Civil III, cargo obteni­do por concurso y designado por Resolución N°17-4-966.</li>
+                                <li>Profesor Adscripto de Derecho Civil II. Cargo obte­nido por concurso y designado por resolución N°157-13-978.-</li>
+                                <li>Profesor Adjunto de Derecho Civil II. Cargo ganado por concurso y designado por Resolución N° 101-19-973.-</li>
+                                <li>Profesor Asociado de Derecho Civil II en la Facul­tad de Ciencias Jurídicas y Sociales de la Univer­sidad Privada del Norte Santo Tomás de Aquino.-</li>
+                                <li>Profesor Titular de la Cátedra de Derecho Civil II – Facultad de Derecho de la U.N.T., (Obligaciones) cargo obtenido mediante concurso, ha­biendo sido de­sig­nado por Resolución N° 570-973. El Tribunal es­tuvo in­tegrado por los Dres. Jorge Joaquin Llambias, Werner Gold­schmidt y Cesar Augusto Abelen­da.</li>
+                                <li>Profesor de Post Grado (Coordinador Académico), Curso de Doctorado&nbsp;Derecho Civil, Facultad de Derecho de la U.N.T. Tema: “Obligaciones de dar sumas de dinero” Años 1993/4.-</li>
+                                <li>Director Regional del Curso “Programa de Derecho Empresario”, dependiente de la Fundación del Tucumán.-</li>
                             </ol>
                                 
                           </div>
@@ -140,43 +215,46 @@
 
 
                           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <h5 class="text-center"><b>Antecedentes institucionales</b></h5>
+                            <h5 class="text-center cg-title"><b>Antecedentes institucionales</b></h5>
+                            <hr>
                             <br>
                             <ol>
-                                <li style="text-align:justify">Director del Banco de la Provincia de Tucumán, durante los años 1968-1969.-</li>
-                                <li style="text-align:justify">Asesor del Ministerio de la Provincia de Tucumán, según Resolución del 29 de Abril de 1969.-</li>
-                                <li style="text-align:justify">Vice-Presidente de la Sociedad Rural de Tucumán, desde el 21 de Diciembre de 1971 hasta 1973.-</li>
-                                <li style="text-align:justify">Miembro (en representación de la Universidad Nacional de Tucumán) del Directorio del Yacimiento Minero de Aguas de Dionisio (YMAD -Bajo la Lumbrera-), dependiente del Ministe­rio de Eco­nomía de la Nación, desde Marzo de 1979 hasta la fecha hasta 1981.-</li>
-                                <li style="text-align:justify">Conjuez del Juzgado Federal de Tucumán.-</li>
-                                <li style="text-align:justify">Conjuez de la Cámara Federal de Tucumán.-</li>
-                                <li style="text-align:justify">Conjuez del Tribunal de cuentas de la Provincia de Tucu­mán.-</li>
-                                <li style="text-align:justify">Miembro de la Comisión Académica del Instituto de Derecho Civil y Comercial del Colegio de Abo­gados de Tucumán.-</li>
-                                <li style="text-align:justify">Conjuez de la Excelentísima Corte Suprema de Justicia de Tucumán</li>
-                                <li style="text-align:justify">Jurado del Consejo Asesor de la Magistratura de Tucumán en los concursos convocados para cubrir cargos de Juez de Primera Instancia en lo Civil y Comercial Común.</li>
+                                <li>Director del Banco de la Provincia de Tucumán, durante los años 1968-1969.-</li>
+                                <li>Asesor del Ministerio de la Provincia de Tucumán, según Resolución del 29 de Abril de 1969.-</li>
+                                <li>Vice-Presidente de la Sociedad Rural de Tucumán, desde el 21 de Diciembre de 1971 hasta 1973.-</li>
+                                <li>Miembro (en representación de la Universidad Nacional de Tucumán) del Directorio del Yacimiento Minero de Aguas de Dionisio (YMAD -Bajo la Lumbrera-), dependiente del Ministe­rio de Eco­nomía de la Nación, desde Marzo de 1979 hasta la fecha hasta 1981.-</li>
+                                <li>Conjuez del Juzgado Federal de Tucumán.-</li>
+                                <li>Conjuez de la Cámara Federal de Tucumán.-</li>
+                                <li>Conjuez del Tribunal de cuentas de la Provincia de Tucu­mán.-</li>
+                                <li>Miembro de la Comisión Académica del Instituto de Derecho Civil y Comercial del Colegio de Abo­gados de Tucumán.-</li>
+                                <li>Conjuez de la Excelentísima Corte Suprema de Justicia de Tucumán</li>
+                                <li>Jurado del Consejo Asesor de la Magistratura de Tucumán en los concursos convocados para cubrir cargos de Juez de Primera Instancia en lo Civil y Comercial Común.</li>
                             </ol>
                         </div>
 
 
 
                           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <h5 class="text-center"><b>Cargos docentes e institucionales a la fecha</b></h5>
+                            <h5 class="text-center cg-title"><b>Cargos docentes e institucionales a la fecha</b></h5>
+                            <hr>
                             <br>
                             <ol>
-                                <li style="text-align:justify">Miembro del Cuerpo Académico de la Escuela de Alta Dirección de la Fundación del Tucumán.-</li>
-                                <li style="text-align:justify">Conjuez de la Corte Suprema de Justicia de Tucumán.-</li>
-                                <li style="text-align:justify">Conjuez de la Cámara Federal de Tucumán.-</li>
-                                <li style="text-align:justify">Miembro Academia Nacional de Derecho y Ciencias Sociales de Córdoba -</li>
+                                <li>Miembro del Cuerpo Académico de la Escuela de Alta Dirección de la Fundación del Tucumán.-</li>
+                                <li>Conjuez de la Corte Suprema de Justicia de Tucumán.-</li>
+                                <li>Conjuez de la Cámara Federal de Tucumán.-</li>
+                                <li>Miembro Academia Nacional de Derecho y Ciencias Sociales de Córdoba -</li>
                             </ol>
                           </div>
 
 
 
                           <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <h5 class="text-center"><b>Otros antecedentes profesionales</b></h5>
+                                <h5 class="text-center cg-title"><b>Otros antecedentes profesionales</b></h5>
+                                <hr>
                                 <br>
                                 <ol>
-                                    <li style="text-align:justify">Fundador y Titular del Estudio Ignacio Colombres Garmendia &amp; Asociados (Año 1965).-</li>
-                                    <li style="text-align:justify">Fundador y Director de la Publicación sobre temas legales “Será Justicia”.-</li>
+                                    <li>Fundador y Titular del Estudio Ignacio Colombres Garmendia &amp; Asociados (Año 1965).-</li>
+                                    <li>Fundador y Director de la Publicación sobre temas legales “Será Justicia”.-</li>
                                 </ol>
                           </div>
                         </div>
@@ -186,60 +264,68 @@
         </section>
 
 
-        <section class="section bg-light"> 
+        <section class="section bg-light" id="contacto"> 
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <p class="text-uppercase footer-title">Si tiene alguna consulta legal, no dude en contactarnos.</p>
+                        </div>              
+                        <div class="custom-form mt-4 pt-4">
+                            <div id="message"></div>
+                            <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="name">Nombre</label>
+                                            <input name="name" id="name" type="text" class="form-control" placeholder="Nombre.." >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input name="email" id="email" type="email" class="form-control" placeholder="Dirección de email..." >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="subject">Asunto</label>
+                                            <input type="text" class="form-control" id="subject" placeholder="Motivo por el que nos contacta.." />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="comments">Mensaje</label>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Mensaje..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-custom" value="Enviar mensaje">
+                                        <div id="simple-msg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  
+                    </div>
                     <div class="col-lg-3">
-                        <p class="text-uppercase footer-title">Help center</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">Accounting </a></li>
-                            <li><a href="#">Billing</a></li>
-                            <li><a href="#">General Question</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <p class="text-uppercase footer-title">about Linexon</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">About Us  </a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Job Opening</a></li>
-                            <li><a href="#">Term</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <p class="text-uppercase footer-title">ressources</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Academy </a></li>
-                            <li><a href="#">Video Tutorial</a></li>
-                            <li><a href="#">Monitoring Grader </a></li>
-                            <li><a href="#">Linexon API</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <p class="text-uppercase footer-title">more info</p>
-                        <ul class="list-unstyled company-sub-menu">
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">For Marketing</a></li>
-                            <li><a href="#">For CEOs </a></li>
-                            <li><a href="#">For Agencies</a></li>
-                            <li><a href="#">Our Apps</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <p class="text-uppercase footer-title">Contact Us</p>
+                        <p class="text-uppercase footer-title">Contacto</p>
                         <div class="contact-us">
-                            <p>Europe: +1 00 12 34 5</p>
-                            <p>US: +1 67 89 01 23 4</p>
-                            <p>support@Linexon.com</p>
+                            <p>PBX: +54 (381) 4310765</p>
+                            <p>Fax: +54 (381) 4228462</p>
+                            <p>estudio@colombres-garmendia.com</p>
+                        </div>
+                        <p class="text-uppercase footer-title">Ubicación</p>
+                        <div class="contact-us">
+                            <p>San Martín 666 - 6º Piso </p>
+                            <p>San Miguel de Tucumán / CP4000 </p>
+                            <p>República Argentina </p>
                         </div>
                         <ul class="footer-icons list-inline mt-4"> 
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-facebook"></i></a></li> 
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-twitter"></i></a></li> 
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-apple"></i></a></li>  
+                            <li class="list-inline-item"><a href="#" class=""><i class="mdi mdi-linkedin"></i></a></li> 
                         </ul>
 
                     </div>
@@ -249,7 +335,7 @@
 
         <!-- COPYRIGHT -->
         <div class="footer-alt bg-dark">
-            <p class="copy-rights">2017 © Linexon. All Rights Reserved</p>
+            <p class="copy-rights">2019 © <b>data</b>Lab. All Rights Reserved</p>
         </div>
                 
 
